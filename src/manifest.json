@@ -1,0 +1,22 @@
+{
+  "name": "Flipped",
+  "appid": "",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wx198f797c423fb87d",
+    "setting": {
+      "urlCheck": false
+    },
+    "usingComponents": true
+  },
+  "mp-alipay": {
+    "usingComponents": true
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

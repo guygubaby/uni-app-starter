@@ -1,0 +1,57 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app",
+        "usingComponents": {
+          "van-button": "/wxcomponents/vant/button/index"
+        }
+      }
+    },
+    {
+      "path": "pages/lifecycle/index",
+      "style": {
+        "navigationBarTitleText": "lifecycle"
+      }
+    },
+    {
+      "path": "pages/animation/index",
+      "style": {
+        "navigationBarTitleText": "animation"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "index"
+      },
+      {
+        "pagePath": "pages/animation/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "animation"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
