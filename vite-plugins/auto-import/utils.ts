@@ -1,6 +1,7 @@
 import fs from 'fs'
 import { join, resolve } from 'path'
 import type { OutputAsset, OutputBundle } from 'rollup'
+import { compileTemplate, parse } from 'vue/compiler-sfc'
 import { BaseComponents, TagReg } from './constants'
 import type { ICtx } from './types'
 
@@ -45,6 +46,41 @@ export const transform = (code: string, id: string, ctx: ICtx) => {
 
   ctx.componentMap[key] = components
   return code
+}
+
+export const transformV2 = (code: string, id: string, ctx: ICtx) => {
+  if (!id.endsWith('.vue'))
+    return
+
+  const keyRE = /src\/([\w\/.]*)\.vue$/i
+  const key = keyRE.exec(id)?.[1]
+
+  if (!key || key === 'App')
+    return
+
+  if (!code.includes('van-'))
+    return
+
+  const { descriptor } = parse(code, {
+    filename: id,
+  })
+
+  const { template } = descriptor
+
+  if (!template)
+    return
+
+  const t = compileTemplate({
+    id,
+    filename: id,
+    isProd: true,
+    source: template.content,
+  })
+
+  const components = (t.ast?.components || [])
+    .map(c => c.replace(/^van-/, ''))
+
+  ctx.componentMap[key] = new Set(components)
 }
 
 const removeExt = (filePath: string) => {
