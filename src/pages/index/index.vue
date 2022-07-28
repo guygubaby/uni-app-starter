@@ -27,6 +27,10 @@
     </button>
 
     <van-button>foo</van-button>
+
+    <van-cell>foo</van-cell>
+
+    <van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
   </view>
 </template>
 
