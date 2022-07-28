@@ -29,6 +29,7 @@ importers:
       rollup: ^2.77.2
       sass: ^1.54.0
       typescript: ^4.7.4
+      uni-app-vant-auto-import: ^0.1.0
       unocss: ^0.44.7
       unocss-preset-weapp: ^0.1.5
       unplugin-auto-import: ^0.10.2
@@ -64,6 +65,7 @@ importers:
       rollup: 2.77.2
       sass: 1.54.0
       typescript: 4.7.4
+      uni-app-vant-auto-import: 0.1.0
       unocss: 0.44.7_vite@2.9.14
       unocss-preset-weapp: 0.1.5
       unplugin-auto-import: 0.10.2_rollup@2.77.2+vite@2.9.14
@@ -4629,6 +4631,10 @@ packages:
   /undici/5.8.0:
     resolution: {integrity: sha512-1F7Vtcez5w/LwH2G2tGnFIihuWUlc58YidwLiCv+jR2Z50x0tNXpRRw7eOIJ+GvqCqIkg9SB7NWAJ/T9TLfv8Q==}
     engines: {node: '>=12.18'}
+    dev: true
+
+  /uni-app-vant-auto-import/0.1.0:
+    resolution: {integrity: sha512-TuINkEp6LjjNUwsLDjK3kAzkCPizG5IplZ5PwbuM4TxHrEhpc4zaFkvOOQxnlYHuzSut4RCY1XlaLgmobWHZ9Q==}
     dev: true
 
   /unimport/0.6.4_rollup@2.77.2+vite@2.9.14:
