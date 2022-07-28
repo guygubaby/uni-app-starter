@@ -38,7 +38,7 @@
     "rollup": "^2.77.2",
     "sass": "^1.54.0",
     "typescript": "^4.7.4",
-    "uni-app-vant-auto-import": "^0.1.0",
+    "uni-app-vant-auto-import": "^0.1.1",
     "unocss": "^0.44.7",
     "unocss-preset-weapp": "^0.1.5",
     "unplugin-auto-import": "^0.10.2",

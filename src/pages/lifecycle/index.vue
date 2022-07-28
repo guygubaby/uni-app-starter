@@ -10,6 +10,8 @@
     <button class="mt" @click="back">
       back
     </button>
+
+    <van-button>foo</van-button>
   </view>
 </template>
 
