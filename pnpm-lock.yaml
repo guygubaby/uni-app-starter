@@ -29,7 +29,7 @@ importers:
       rollup: ^2.77.2
       sass: ^1.54.3
       typescript: ^4.7.4
-      uni-app-vant-auto-import: ^0.1.5
+      uni-app-vant-auto-import: ^0.1.6
       unocss: ^0.45.4
       unocss-preset-weapp: ^0.1.7
       unplugin-auto-import: ^0.10.3
@@ -65,7 +65,7 @@ importers:
       rollup: 2.77.2
       sass: 1.54.3
       typescript: 4.7.4
-      uni-app-vant-auto-import: 0.1.5
+      uni-app-vant-auto-import: 0.1.6
       unocss: 0.45.4_vite@2.9.14
       unocss-preset-weapp: 0.1.7
       unplugin-auto-import: 0.10.3_rollup@2.77.2+vite@2.9.14
@@ -4664,8 +4664,8 @@ packages:
     engines: {node: '>=12.18'}
     dev: true
 
-  /uni-app-vant-auto-import/0.1.5:
-    resolution: {integrity: sha512-KrfquWSNIQr/TmAjjBD5PIRDJmrBRw0I+Ss6F/q22QF1XYcbZMVZ5I9ONtPmq7JYZsTOirL1TidtdnBtiaYvgA==}
+  /uni-app-vant-auto-import/0.1.6:
+    resolution: {integrity: sha512-nH1IdNvPQUx/lhs4L7Y9rHtGpBR0jV6JwMsFiCv3MeyaN1eSoaKAM/HX/vXPbSg6okAkpJx1FPxnPZvutjvHKw==}
     dependencies:
       fs-extra: 10.1.0
     dev: true
