@@ -25,12 +25,6 @@
     <button @click="userStore.inc()">
       inc
     </button>
-
-    <van-button>foo</van-button>
-
-    <van-cell>foo</van-cell>
-
-    <van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
   </view>
 </template>
 
@@ -44,7 +38,6 @@ const inc = () => {
 const gotoLifeCycle = () => {
   uni.navigateTo({
     url: '../lifecycle/index',
-    animationType: 'slide-in-top',
   })
 }
 

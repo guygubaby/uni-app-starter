@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
 import UnoCss from 'unocss/vite'
@@ -7,6 +8,11 @@ import VantAutoImport from 'uni-app-vant-auto-import'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~': resolve(__dirname, 'src'),
+    },
+  },
   plugins: [
     Uni({
       vueOptions: {
@@ -19,18 +25,21 @@ export default defineConfig({
       imports: [
         'vue',
         'vue/macros',
-        {
-          '@dcloudio/uni-app': [
-            'onShow',
-            'onHide',
-            'onLoad',
-            'onUnload',
-          ],
-        },
+        'pinia',
+        'uni-app',
       ],
       dirs: ['./src/store', './src/utils'],
       dts: './src/auto-import.d.ts',
     }),
     VantAutoImport(),
   ],
+  server: {
+    proxy: {
+      '^/api': {
+        target: 'http://localhost:8081',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })

@@ -1,6 +1,9 @@
 type Methods = UniApp.RequestOptions['method']
 type ParamType = UniApp.RequestOptions['data']
-type ResType = UniApp.RequestSuccessCallbackResult['data']
+// type ResType = UniApp.RequestSuccessCallbackResult['data']
+interface ResType {
+  [key: string]: any
+}
 
 declare global {
   interface HttpResponse<T extends ResType> {
@@ -8,6 +11,8 @@ declare global {
     code: number
   }
 }
+
+const TIME_OUT = 10 * 1000
 
 const request = <T extends ResType>(url: string, data?: ParamType, method: Methods = 'GET'): Promise<HttpResponse<T>> => {
   return new Promise((resolve, reject) => {
@@ -18,21 +23,14 @@ const request = <T extends ResType>(url: string, data?: ParamType, method: Metho
       header: {
         'Content-Type': 'application/json',
       },
-      responseType: 'text',
       dataType: 'json',
-      timeout: 10 * 1000,
+      timeout: TIME_OUT,
       success: (res) => {
         const { statusCode: code, data } = res
-        try {
-          const parsedData = JSON.parse(data as string) as T
-          return resolve({
-            data: parsedData,
-            code,
-          })
-        }
-        catch (error) {
-          return reject(error)
-        }
+        return resolve({
+          code,
+          data: data as any,
+        })
       },
       fail: (error) => {
         return reject(error)
