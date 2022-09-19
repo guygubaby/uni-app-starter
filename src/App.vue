@@ -10,4 +10,8 @@ onHide(() => {
 })
 </script>
 
-<style></style>
+<style>
+@import './style/index.scss';
+@import "./color-ui/main.css";
+@import "./color-ui/animation.css";
+</style>

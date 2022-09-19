@@ -22,9 +22,9 @@
       {{ userStore.counter }}
     </p>
 
-    <button @click="userStore.inc()">
+    <van-button @click="userStore.inc()">
       inc
-    </button>
+    </van-button>
   </view>
 </template>
 

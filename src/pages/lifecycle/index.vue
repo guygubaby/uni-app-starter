@@ -3,6 +3,7 @@
     <view class="my">
       lifecycle
     </view>
+
     <button @click="handleClick">
       click me
     </button>
