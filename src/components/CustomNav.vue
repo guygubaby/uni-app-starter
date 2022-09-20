@@ -48,9 +48,3 @@ const handleBackClicked = () => {
   })
 }
 </script>
-
-<style>
-custom-nav {
-  width: 100%;
-}
-</style>
