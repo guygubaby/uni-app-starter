@@ -1,6 +1,6 @@
 <template>
   <view class="flex flex-col items-center">
-    <CuCustom bg-color="bg-gradual-blue" :is-back="true" class="w-full">
+    <CustomNav bg-color="bg-gradual-pink" is-back>
       <template #backText>
         back
       </template>
@@ -8,13 +8,9 @@
       <template #content>
         lifecycle
       </template>
-    </CuCustom>
+    </CustomNav>
 
-    <view class="my">
-      lifecycle
-    </view>
-
-    <van-button @click="handleClick">
+    <van-button class="mt-10" @click="handleClick">
       click me
     </van-button>
 
@@ -55,6 +51,7 @@
 
 <script lang="ts" setup>
 import { uuid } from '@bryce-loskie/utils'
+import CustomNav from '~/components/CustomNav.vue'
 
 const back = () => {
   uni.navigateBack()

@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col items-center">
-    <CuCustom bg-color="bg-gradual-blue" class="w-full">
+    <CustomNav bg-color="bg-gradual-purple">
       <template #content>
         <text>
           Animation
         </text>
       </template>
-    </CuCustom>
+    </CustomNav>
 
     <view :animation="frame" class="w-200px h-200px mt bg-gradient-to-r from-purple-500 to-sky-500 rounded-2xl" />
 
@@ -17,6 +17,8 @@
 </template>
 
 <script lang="ts" setup>
+import CustomNav from '~/components/CustomNav.vue'
+
 const frame = shallowRef({})
 
 const animation = uni.createAnimation({

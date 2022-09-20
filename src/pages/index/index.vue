@@ -1,12 +1,12 @@
 <template>
   <view class="flex flex-col items-center">
-    <CuCustom bg-color="bg-gradual-blue" class="w-full">
+    <CustomNav bg-color="bg-gradual-blue">
       <template #content>
         <text>
           Home
         </text>
       </template>
-    </CuCustom>
+    </CustomNav>
 
     <!-- <image class="w-200px h-200px mt" src="/static/logo.png" /> -->
 
@@ -51,6 +51,8 @@
 </template>
 
 <script setup lang="ts">
+import CustomNav from '~/components/CustomNav.vue'
+
 let counter = $ref(0)
 
 const inc = () => {
