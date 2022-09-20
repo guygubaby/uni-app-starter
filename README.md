@@ -2,20 +2,24 @@
 
 Opinionated uni app starter
 
-## Getting Started
+## Getting started
+
 ```bash
+npx degit guygubaby/uni-app-starter my-app
 pnpm i
 pnpm dev # for wechat mini program
 pnpm build # for wechat mini program
 ```
 
-## Shipped
+## Shipped with
 
-- UnoCss
-- Pinia
-- @vant/weapp
 - TypeScript
-- uni-app-vant-auto-import
+- Vite
+- UnoCss
+- Vue3
+- Pinia
+- @vant/weapp: [Doc](https://vant-ui.github.io/vant-weapp/#/home)
+- ColorUI: [Doc](https://github.com/weilanwl/ColorUI), [Demo](https://github.com/weilanwl/ColorUI/tree/master/demo)
 
 ## License
 

@@ -1,4 +1,6 @@
-const colorInit = (app: any) => {
+import type { App } from 'vue'
+
+const colorInit = (app: App<Element>) => {
   uni.getSystemInfo({
     success(e: any) {
       // #ifndef MP
@@ -101,4 +103,10 @@ const colorInit = (app: any) => {
   },
   ]
 }
-export { colorInit }
+
+const install = (app: App<Element>) => {
+  colorInit(app)
+}
+
+export default install
+

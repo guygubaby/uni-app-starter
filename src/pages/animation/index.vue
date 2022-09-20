@@ -1,10 +1,18 @@
 <template>
   <div class="flex flex-col items-center">
-    <image :animation="frame" class="w-120px h-120px" src="/static/logo.png" />
+    <CuCustom bg-color="bg-gradual-blue" class="w-full">
+      <template #content>
+        <text>
+          Animation
+        </text>
+      </template>
+    </CuCustom>
 
-    <button class="mt" @click="animate">
+    <view :animation="frame" class="w-200px h-200px mt bg-gradient-to-r from-purple-500 to-sky-500 rounded-2xl" />
+
+    <van-button class="mt" @click="animate">
       animate
-    </button>
+    </van-button>
   </div>
 </template>
 

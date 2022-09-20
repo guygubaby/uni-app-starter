@@ -1,12 +1,12 @@
 <template>
-  <view>
-    <view class="cu-custom" :style="[{ height: `${CustomBar}px` }]">
+  <view class="w-full">
+    <view class="cu-custom w-full" :style="{ height: `${CustomBar}px` }">
       <view class="cu-bar fixed" :style="style" :class="[bgImage !== '' ? 'none-bg text-white bg-img' : '', bgColor]">
         <view v-if="isBack" class="action" @tap="BackPage">
           <text class="cuIcon-back" />
           <slot name="backText" />
         </view>
-        <view class="content" :style="[{ top: `${StatusBar}px` }]">
+        <view class="content" :style="{ top: `${StatusBar}px` }">
           <slot name="content" />
         </view>
         <slot name="right" />
@@ -60,6 +60,3 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
