@@ -23,7 +23,7 @@
     "vue": "^3.2.39"
   },
   "devDependencies": {
-    "@bryce-loskie/eslint-config": "^2.0.6",
+    "@bryce-loskie/eslint-config": "^2.0.7",
     "@dcloudio/types": "^3.0.15",
     "@dcloudio/uni-automator": "~3.0.0-alpha",
     "@dcloudio/uni-cli-shared": "~3.0.0-alpha",
@@ -35,7 +35,7 @@
     "rollup": "^2.79.0",
     "sass": "^1.54.9",
     "typescript": "^4.8.3",
-    "unocss": "^0.45.21",
+    "unocss": "^0.45.22",
     "unocss-preset-weapp": "^0.1.15",
     "unplugin-auto-import": "^0.11.2",
     "unplugin-transform-we-class": "^0.1.19",
