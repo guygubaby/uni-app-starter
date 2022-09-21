@@ -83,10 +83,9 @@ const install = (app: App<Element>) => {
   const customBarHeight = ref<number>(0)
 
   uni.getSystemInfo({
-    success(e: any) {
+    success(e) {
       // #ifdef MP-WEIXIN
-      statusBarHeight.value = e.statusBarHeight
-      // @ts-expect-error ignore wx
+      statusBarHeight.value = e.statusBarHeight ?? 40
       const customHeight = wx.getMenuButtonBoundingClientRect()
       customBarHeight.value = customHeight.bottom + customHeight.top - statusBarHeight.value
 

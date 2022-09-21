@@ -17,7 +17,9 @@ importers:
       '@dcloudio/uni-ui': ^1.4.22
       '@dcloudio/vite-plugin-uni': ~3.0.0-alpha
       '@iconify-json/carbon': ^1.1.8
+      '@vant/weapp': ^1.10.5
       eslint: ^8.23.1
+      miniprogram-api-typings: ^3.6.0
       pinia: ^2.0.22
       rollup: ^2.79.0
       sass: ^1.54.9
@@ -46,7 +48,9 @@ importers:
       '@dcloudio/uni-cli-shared': 3.0.0-alpha-3040820220424001_vue@3.2.39
       '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3040820220424001_vite@2.9.14+vue@3.2.39
       '@iconify-json/carbon': 1.1.8
+      '@vant/weapp': 1.10.5
       eslint: 8.23.1
+      miniprogram-api-typings: 3.6.0
       rollup: 2.79.0
       sass: 1.54.9
       typescript: 4.8.3
@@ -1383,6 +1387,10 @@ packages:
       '@unocss/transformer-directives': 0.45.21
       magic-string: 0.26.3
       vite: 2.9.14_sass@1.54.9
+    dev: true
+
+  /@vant/weapp/1.10.5:
+    resolution: {integrity: sha512-bAHp9r0ZiRsOqPOLzQHI/ZvkAlXzol1/TFhM70MyghuxkzJTjcDUd8RIfLkCN3c1MCK/PfBGw2an8/afygftCg==}
     dev: true
 
   /@vitejs/plugin-legacy/1.8.2_vite@2.9.14:
@@ -3686,6 +3694,10 @@ packages:
 
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
+    dev: true
+
+  /miniprogram-api-typings/3.6.0:
+    resolution: {integrity: sha512-xwK3PzhhxnfWqDfBikHLdAbj7Wy4F887nBcQrzwuF758Fw2qC4ivpKPL9t0uJZk5QYnU28+NqA7Q3lzYGMHQnA==}
     dev: true
 
   /mlly/0.5.7:

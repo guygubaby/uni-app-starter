@@ -53,19 +53,7 @@
     "backgroundColor": "#F8F8F8",
     "navigationStyle": "custom",
     "usingComponents": {
-      "van-action-sheet": "/wxcomponents/vant/action-sheet/index",
-      "van-area": "/wxcomponents/vant/area/index",
-      "van-button": "/wxcomponents/vant/button/index",
-      "van-calendar": "/wxcomponents/vant/calendar/index",
-      "van-card": "/wxcomponents/vant/card/index",
-      "van-cell": "/wxcomponents/vant/cell/index",
-      "van-cell-group": "/wxcomponents/vant/cell-group/index",
-      "van-checkbox": "/wxcomponents/vant/checkbox/index",
-      "van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
-      "van-circle": "/wxcomponents/vant/circle/index",
-      "van-col": "/wxcomponents/vant/col/index",
-      "van-collapse": "/wxcomponents/vant/collapse/index",
-      "van-collapse-item": "/wxcomponents/vant/collapse-item/index"
+      "van-button": "/wxcomponents/vant/button/index"
     }
   }
 }
