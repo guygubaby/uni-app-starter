@@ -4,6 +4,7 @@
   "scripts": {
     "init-vant": "node ./scripts/init-vant.mjs",
     "test": "vitest",
+    "lint": "eslint .",
     "postinstall": "pnpm run init-vant",
     "dev": "uni -p mp-weixin",
     "build": "uni build -p mp-weixin",
