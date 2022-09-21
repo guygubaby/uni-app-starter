@@ -41,7 +41,7 @@ const copyVant = async () => {
     const files = await readdir(destDir)
 
     if (files.length > 0)
-      return console.log('@vant/weapp already copied')
+      return console.log('@vant/weapp is ready to use')
 
     else
       await rm(destDir, { recursive: true })
